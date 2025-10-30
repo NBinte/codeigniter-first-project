@@ -1,0 +1,38 @@
+<?php
+
+namespace App\Controllers\Admin;
+
+use App\Controllers\BaseController;
+
+class Blog extends BaseController
+{
+    public function index()
+    {
+       echo "<h2>A list of blog posts</h2>";
+    }
+
+    // public function getAllUsers()
+    // {
+    //     //echo "<h2> This is a product: ${type} with an id ${product_id}</h2>";
+    //     //return view('product');
+
+    //     echo "<h2> Show all users </h2>";
+
+    // }
+
+    // protected function adminCheck(){
+    //     echo "This is a protected place";
+    // }
+
+    public function createNew(){
+        return view("blog_form");
+    }
+
+    public function saveBlog(){
+        echo "<pre>";
+            print_r($_POST);
+        echo "<pre>";
+    }
+
+
+}
