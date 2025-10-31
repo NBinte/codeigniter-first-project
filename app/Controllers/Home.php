@@ -11,7 +11,8 @@ class Home extends BaseController
         return view('welcome_message');
     }
 
-    function validation(){
+    function validation()
+    {
         $shop = new Shop();
         echo $shop->product('laptop', 'lenovo') . "<br>";
 
